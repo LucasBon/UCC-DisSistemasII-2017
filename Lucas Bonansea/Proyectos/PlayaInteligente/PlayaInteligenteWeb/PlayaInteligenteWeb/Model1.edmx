@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="iplayadbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="darsena">
+          <Key>
+            <PropertyRef Name="idDarsena" />
+          </Key>
+          <Property Name="idDarsena" Type="int" Nullable="false" />
+          <Property Name="Numero" Type="int" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="estadia">
+          <Key>
+            <PropertyRef Name="idEstadia" />
+          </Key>
+          <Property Name="idEstadia" Type="int" Nullable="false" />
+          <Property Name="entrada" Type="datetime" Precision="2" Nullable="false" />
+          <Property Name="salida" Type="datetime" Precision="2" />
+          <Property Name="codigo" Type="int" Nullable="false" />
+          <Property Name="dominio" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityContainer Name="iplayadbModelStoreContainer">
+          <EntitySet Name="darsena" EntityType="Self.darsena" Schema="iplayadb" store:Type="Tables" />
+          <EntitySet Name="estadia" EntityType="Self.estadia" Schema="iplayadb" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="iplayadbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DarsenaDao">
+          <Key>
+            <PropertyRef Name="idDarsena" />
+          </Key>
+          <Property Name="idDarsena" Type="Int32" Nullable="false" />
+          <Property Name="Numero" Type="Int32" Nullable="false" />
+          <Property Name="Estado" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EstadiaDao">
+          <Key>
+            <PropertyRef Name="idEstadia" />
+          </Key>
+          <Property Name="idEstadia" Type="Int32" Nullable="false" />
+          <Property Name="entrada" Type="DateTime" Nullable="false" />
+          <Property Name="salida" Type="DateTime" />
+          <Property Name="codigo" Type="Int32" Nullable="false" />
+          <Property Name="dominio" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="iplayadbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DarsenasDao" EntityType="iplayadbModel.DarsenaDao" />
+          <EntitySet Name="EstadiasDao" EntityType="iplayadbModel.EstadiaDao" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="iplayadbModelStoreContainer" CdmEntityContainer="iplayadbEntities">
+          <EntitySetMapping Name="DarsenasDao">
+            <EntityTypeMapping TypeName="iplayadbModel.DarsenaDao">
+              <MappingFragment StoreEntitySet="darsena">
+                <ScalarProperty Name="idDarsena" ColumnName="idDarsena" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EstadiasDao">
+            <EntityTypeMapping TypeName="iplayadbModel.EstadiaDao">
+              <MappingFragment StoreEntitySet="estadia">
+                <ScalarProperty Name="idEstadia" ColumnName="idEstadia" />
+                <ScalarProperty Name="entrada" ColumnName="entrada" />
+                <ScalarProperty Name="salida" ColumnName="salida" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="dominio" ColumnName="dominio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

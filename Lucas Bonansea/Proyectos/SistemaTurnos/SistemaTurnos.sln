@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaTurnos", "SistemaTurnos\SistemaTurnos.csproj", "{73E2C7F7-1C1D-459B-BB8A-1BB3048A7FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaTurnosWeb", "SistemaTurnosWeb\SistemaTurnosWeb.csproj", "{038B95C9-C7C0-419F-9C07-5B05574D5FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaTurnosWeb.Tests", "SistemaTurnosWeb.Tests\SistemaTurnosWeb.Tests.csproj", "{5A4ADDB6-650C-42EA-A945-F28ED481019E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E2C7F7-1C1D-459B-BB8A-1BB3048A7FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E2C7F7-1C1D-459B-BB8A-1BB3048A7FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E2C7F7-1C1D-459B-BB8A-1BB3048A7FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E2C7F7-1C1D-459B-BB8A-1BB3048A7FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038B95C9-C7C0-419F-9C07-5B05574D5FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038B95C9-C7C0-419F-9C07-5B05574D5FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038B95C9-C7C0-419F-9C07-5B05574D5FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038B95C9-C7C0-419F-9C07-5B05574D5FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4ADDB6-650C-42EA-A945-F28ED481019E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4ADDB6-650C-42EA-A945-F28ED481019E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4ADDB6-650C-42EA-A945-F28ED481019E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4ADDB6-650C-42EA-A945-F28ED481019E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

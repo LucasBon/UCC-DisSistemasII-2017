@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SistemaTurnos.Cliente">
+    <Position X="2.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.ClienteAnonimo">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAQAAAAACBAAAAAAAAAA=</HashCode>
+      <FileName>ClienteAnonimo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.ClienteConocido">
+    <Position X="6" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAEAAAACAQAAAAAABAAAAAAIAAA=</HashCode>
+      <FileName>ClienteConocido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.ClientePriorizado">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAEAAAAQAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>ClientePriorizado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.MotivoAtencion">
+    <Position X="9" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAABAAAAAgABAgAQAAAABAIAAACIAAAIAAAA=</HashCode>
+      <FileName>MotivoAtencion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.RangoHora">
+    <Position X="13.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAgAAAAAAAAAAAAIAgAAAAAIAAAAA=</HashCode>
+      <FileName>RangoHora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.Turno">
+    <Position X="9" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABQgQAAAAAADAAAAAAAAAAAAGAAAAAAQgAAA=</HashCode>
+      <FileName>Turno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.GeneradorNumeroTurno">
+    <Position X="11.75" Y="3.75" Width="3.5" />
+    <NestedTypes>
+      <Class Name="SistemaTurnos.GeneradorNumeroTurno.MotivoPrioridad" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GeneradorNumeroTurno.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAEAIACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneradorNumeroTurno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.JerarquiaMotivoAtencion">
+    <Position X="3.75" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>JerarquiaMotivoAtencion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SistemaTurnos.MotivoAtencionMenu">
+    <Position X="0.5" Y="9.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABIAAAAAAAABAgAAAAAAAgABEAAAAAAAAAAA=</HashCode>
+      <FileName>MotivoAtencionMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SistemaTurnos.JerarquiaRoot">
+    <Position X="6.25" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JerarquiaRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaTurnos.JerarquiaMenu">
+    <Position X="4.5" Y="6" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAIAAAAAAAABAgAAAAAAAgAAAAAAAAAIAAAA=</HashCode>
+      <FileName>JerarquiaMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SistemaTurnos.ElementoMenu">
+    <Position X="0.75" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementoMenu.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SistemaTurnos.ElementoEnJerarquiaMenu">
+    <Position X="0.75" Y="7.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementoEnJerarquiaMenu.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
